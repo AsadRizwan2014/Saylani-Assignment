@@ -1,0 +1,39 @@
+td{
+    border: 1px solid black;
+    width: 5vw;   
+    text-align: center;
+}
+.space{
+    border: none;
+}
+.clr1{
+    background-color: rgb(187, 99, 180);
+}
+.clr2{
+    background-color: rgb(138, 173, 219);
+}
+.clr3{
+    background-color: rgba(163, 102, 33, 0.932);
+}
+.clr4{
+    background-color: rgb(255, 145, 0)
+}
+.clr5{
+    background-color: yellow
+}
+.clr6{
+    background-color: rgb(133, 229, 241)
+}
+.clr7{
+    background-color: rgb(131, 212, 131)
+}
+.clr8{
+    background-color:coral
+}
+.clr9{
+    background-color: rgb(207, 207, 236)
+}
+h1{
+    padding: 6px;
+    background-color: yellow;
+}
