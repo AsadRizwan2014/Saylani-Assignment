@@ -1,0 +1,267 @@
+/*nav and footer*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+nav{
+  background: #1b1b1b;
+  z-index: 10;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+  z-index: 10;
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  z-index: 10;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+  z-index: 10;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  z-index: 10;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+               z-index: 10;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+  z-index: 10;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+  z-index: 10;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  z-index: 10;
+}
+nav ul ul li a{
+  line-height: 50px;
+  z-index: 10;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+    z-index: 10;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+    z-index: 10;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+    z-index: 10;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+    z-index: 10;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .show:hover{
+    color: cyan;
+    z-index: 10;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 10;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+    z-index: 10;
+  }
+  [id^=btn]:checked + ul{
+    transition: 5s;
+    display: block;
+    z-index: 10;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+    z-index: 10;
+  }
+}
+.ftrh2{
+  color: grey;
+}
+.body-content{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: justify;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 20px;
+}
+.footer{
+  width: 100%;
+  display: block;
+  background: #1b1b1b;
+}
+.footer-inner{
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: left;
+}
+.footer-items{
+  width: 20%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.ftrH1{
+  padding: 10px 0;
+  font-size: 40px;
+  color: white;
+}
+.footer-items > ul{
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+.footer-items > ul > li > a{
+  text-decoration: none;
+  outline: none;
+  color: white;
+  transition: 0.3s;
+}
+.footer-items > ul > li > a:hover{
+  color: cyan;
+}
+.footer-items > ul > li{
+  margin: 10px 0;
+  height: 25px;
+}
+.social-icons{
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+.social-icons a{
+  text-decoration: none;
+}
+.social-icons i{
+  height: 15px;
+  width: 15px;
+  margin: 20px 5px;
+  padding: 20px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid grey;
+  transition: 0.3s;
+}
+.social-icons i:hover{
+  background: cyan;
+}
+.footer-bottom{
+  padding: 10px;
+  background: grey;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+.TL{
+  color: grey;
+  font-size: 15px;
+}
+@media all and (max-width: 968px){
+  .footer-items{
+    width: 50%;
+  }
+}
+@media all and (max-width: 600px){
+  .footer-items{
+    width: 100%;
+  }
+}

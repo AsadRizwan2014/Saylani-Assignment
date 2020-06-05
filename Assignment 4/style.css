@@ -1,0 +1,11 @@
+/*else material*/
+.carousel-inner > .carousel-item > img {
+  width:640px;
+  height:400px;
+}
+.carousel-indicators li{
+  background-color: #9b1717!important;
+}
+.carousel-caption{
+  color: #33ffff;
+}

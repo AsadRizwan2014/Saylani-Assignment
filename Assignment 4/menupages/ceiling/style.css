@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: grey;
+}
+h1:hover{
+    transition: 0.3s;
+    color: black;
+}
